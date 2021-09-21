@@ -2,22 +2,31 @@
   --primary-color: #193576;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h4 {
   font-size: 1.5rem;
+  font-weight: 700
+}
+
+h5 {
+  font-size: 1.25rem;
   font-weight: 700
 }
 
@@ -46,6 +55,7 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+  min-height: 200px;
 }
 
 .hero {
@@ -73,8 +83,20 @@ li {
 }
 
 .hero .fas {
-  margin-top: 2rem;
   font-size: 3rem;
+}
+
+.call-to-action {
+  display: block;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all .25s;
+}
+
+.call-to-action:hover {
+  text-decoration: none;
 }
 
 .section {
@@ -98,4 +120,78 @@ li {
 .discipline h2 {
   text-align: center;
   margin-bottom: 4rem;
+}
+
+.contact {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.contact a {
+  display: block;
+  color: #fff;
+}
+
+.contact-middle {
+  margin: 3rem 0;
+}
+
+.event {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 400px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.event-extender {
+  font-size: 2rem;
+}
+
+.event-info {
+  width: 100%;
+  margin-bottom: 0;
+  padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.event-info i {
+  font-size: 1.5rem;
+}
+
+.event-detail {
+  position: absolute;
+  height: 100%;
+  background-color: #fff;
+  transform: translateY(101%);
+  transition: transform .5s;
+  overflow-y: auto;
+}
+
+.event.open .event-detail {
+  transform: translateY(0);
+}
+
+@media (min-width: 766px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  .contact-middle {
+    margin: 0;
+  }
 }
