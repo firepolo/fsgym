@@ -1,2 +1,49 @@
+:root {
+  --primary-color: #193576;
+}
+
 .navbar {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: var(--primary-color) !important;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/home/hero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%) opacity(50%);
+}
+
+.hero .fas {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
 }
