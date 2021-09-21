@@ -2,6 +2,23 @@
   --primary-color: #193576;
 }
 
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
 .navbar {
   font-size: 1.5rem;
 }
@@ -39,11 +56,16 @@
   font-size: 3rem;
 }
 
-h1 {
-  font-size: 4rem;
-  font-weight: 700;
+.section {
+  padding: 5rem 0;
 }
 
-h2 {
-  font-size: 3rem;
+.section-dark {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.section-light {
+  background-color: #fff;
+  color: var(--primary-color);
 }
