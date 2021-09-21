@@ -3,7 +3,7 @@
   <head>
     <title>FSG Granges-Marnand</title>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,7 +12,7 @@
     <header>
       <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img src="img/logo.png" width="64" height="64">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Évenements</a>
+                <a class="nav-link" href="events.html">Évenements</a>
               </li>
             </ul>
           </div>
@@ -30,10 +30,21 @@
     </header>
     <main>
       <section class="hero">
-        <div>
+        <div class="container">
           <h3>Bienvenue dans la société</h3>
           <h1>FSG Granges-Marnand</h1>
-          <i class="fas fa-angle-down"></i>
+          <div class="row">
+            <div class="col-3 offset-3">
+              <a href="tel:+41219051010" class="call-to-action">
+                <i class="fas fa-phone"></i>
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="mailto:info@fsg-granges-marnand.ch" class="call-to-action">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section theme-light">
@@ -64,16 +75,16 @@
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-md-3">
+            <div class="col-lg-3">
               <h3>Formation</h3>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3">
               <h3>Solidarité</h3>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3">
               <h3>Fidélité</h3>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3">
               <h3>Adaptation</h3>
             </div>
           </div>
@@ -93,285 +104,187 @@
             <div class="col-md-6">
               <div class="discipline">
                 <h2>Actifs</h2>
-                <div class="row">
-                  <div class="col-6">
-                    <h4>Age</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>dès 15 ans (école obligatoire terminée)</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Entraînements</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>mardi et jeudi de 20h00 à 22h00</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Lieu</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>Centre Sous-Bosset</p>
-                  </div>
-                </div>
+                <h4>Age</h4>
+                <p>dès 15 ans (école obligatoire terminée)</p>
+                <h4>Entraînements</h4>
+                <p>mardi et jeudi de 20h00 à 22h00</p>
+                <h4>Lieu</h4>
+                <p>Centre Sous-Bosset</p>
               </div>
             </div>
-            <div class="col-md-6">
+          </div>
+          <div class="row no-gutters">
+            <div class="col-md-6 order-6 order-md-0">
               <div class="discipline theme-dark">
                 <h2>Ados mixtes</h2>
-                <div class="row">
-                  <div class="col-6">
-                    <h4>Age</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>dès 10 ans</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Entraînements</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>vendredi de 18h30 à 20h00</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Lieu</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>Centre Sous-Bosset</p>
-                  </div>
-                </div>
+                <h4>Age</h4>
+                <p>dès 10 ans</p>
+                <h4>Entraînements</h4>
+                <p>vendredi de 18h30 à 20h00</p>
+                <h4>Lieu</h4>
+                <p>Centre Sous-Bosset</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 order-0 order-md-6">
               <div class="img-cover" style="background-image:url('img/home/groups/adosMixtes.jpg');"></div>
             </div>
+          </div>
+          <div class="row no-gutters">
             <div class="col-md-6">
               <div class="img-cover" style="background-image:url('img/home/groups/agres.jpg');"></div>
             </div>
             <div class="col-md-6">
               <div class="discipline">
                 <h2>Agrès</h2>
-                <div class="row">
-                  <div class="col-6">
-                    <h4>Age</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>dès 7 ans</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Entraînements</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>jeudi de 18h15 à 20h00</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Lieu</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>Centre Sous-Bosset</p>
-                  </div>
-                </div>
+                <h4>Age</h4>
+                <p>dès 7 ans</p>
+                <h4>Entraînements</h4>
+                <p>jeudi de 18h15 à 20h00</p>
+                <h4>Lieu</h4>
+                <p>Centre Sous-Bosset</p>
               </div>
             </div>
-            <div class="col-md-6">
+          </div>
+          <div class="row no-gutters">
+            <div class="col-md-6 order-6 order-md-0">
               <div class="discipline theme-dark">
                 <h2>Athlétisme</h2>
-                <div class="row">
-                  <div class="col-6">
-                    <h4>Age</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>dès 7 ans</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Entraînements</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>mercredi de 18h00 à 19h30</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Lieu</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>Centre Sous-Bosset ou Battoir</p>
-                  </div>
-                </div>
+                <h4>Age</h4>
+                <p>dès 7 ans</p>
+                <h4>Entraînements</h4>
+                <p>mercredi de 18h00 à 19h30</p>
+                <h4>Lieu</h4>
+                <p>Centre Sous-Bosset ou Battoir</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 order-0 order-md-6">
               <div class="img-cover" style="background-image:url('img/home/groups/athletisme.jpg');"></div>
             </div>
+          </div>
+          <div class="row no-gutters">
             <div class="col-md-6">
               <div class="img-cover" style="background-image:url('img/home/groups/enfantines.jpg');"></div>
             </div>
             <div class="col-md-6">
               <div class="discipline">
                 <h2>Enfantines</h2>
-                <div class="row">
-                  <div class="col-6">
-                    <h4>Age</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>dès scolarité</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Entraînements</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>lundi de 16h30 à 17h45</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Lieu</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>Centre Sous-Bosset</p>
-                  </div>
-                </div>
+                <h4>Age</h4>
+                <p>dès scolarité</p>
+                <h4>Entraînements</h4>
+                <p>lundi de 16h30 à 17h45</p>
+                <h4>Lieu</h4>
+                <p>Centre Sous-Bosset</p>
               </div>
             </div>
-            <div class="col-md-6">
+          </div>
+          <div class="row no-gutters">
+            <div class="col-md-6 order-6 order-md-0">
               <div class="discipline theme-dark">
                 <h2>Gym hommes</h2>
-                <div class="row">
-                  <div class="col-6">
-                    <h4>Age</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>dès 25 ans</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Entraînements</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>lundi de 20h00 à 22h00</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Lieu</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>Centre Sous-Bosset</p>
-                  </div>
-                </div>
+                <h4>Age</h4>
+                <p>dès 25 ans</p>
+                <h4>Entraînements</h4>
+                <p>lundi de 20h00 à 22h00</p>
+                <h4>Lieu</h4>
+                <p>Centre Sous-Bosset</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 order-0 order-md-6">
               <div class="img-cover" style="background-image:url('img/home/groups/gymHommes.jpg');"></div>
             </div>
+          </div>
+          <div class="row no-gutters">
             <div class="col-md-6">
               <div class="img-cover" style="background-image:url('img/home/groups/gymPourTous.jpg');"></div>
             </div>
             <div class="col-md-6">
               <div class="discipline">
                 <h2>Gym pour tous</h2>
-                <div class="row">
-                  <div class="col-6">
-                    <h4>Age</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>dès 16 ans</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Entraînements</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>mercredi de 19h30 à 21h00</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Lieu</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>Centre Sous-Bosset</p>
-                  </div>
-                </div>
+                <h4>Age</h4>
+                <p>dès 16 ans</p>
+                <h4>Entraînements</h4>
+                <p>mercredi de 19h30 à 21h00</p>
+                <h4>Lieu</h4>
+                <p>Centre Sous-Bosset</p>
               </div>
             </div>
-            <div class="col-md-6">
+          </div>
+          <div class="row no-gutters">
+            <div class="col-md-6 order-6 order-md-0">
               <div class="discipline theme-dark">
                 <h2>Pilates</h2>
-                <div class="row">
-                  <div class="col-6">
-                    <h4>Age</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>dès 16 ans</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Entraînements</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>mardi de 18h15 à 19h15</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Lieu</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>Sassel</p>
-                  </div>
-                </div>
+                <h4>Age</h4>
+                <p>dès 16 ans</p>
+                <h4>Entraînements</h4>
+                <p>mardi de 18h15 à 19h15</p>
+                <h4>Lieu</h4>
+                <p>Sassel</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 order-0 order-md-6">
               <div class="img-cover" style="background-image:url('img/home/groups/gymTonic.jpg');"></div>
             </div>
+          </div>
+          <div class="row no-gutters">
             <div class="col-md-6">
               <div class="img-cover" style="background-image:url('img/home/groups/jeunesse.jpg');"></div>
             </div>
             <div class="col-md-6">
               <div class="discipline">
                 <h2>Jeunesse</h2>
-                <div class="row">
-                  <div class="col-6">
-                    <h4>Age</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>dès 7 ans</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Entraînements</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>lundi de 17h45 à 19h15</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Lieu</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>Centre Sous-Bosset</p>
-                  </div>
-                </div>
+                <h4>Age</h4>
+                <p>dès 7 ans</p>
+                <h4>Entraînements</h4>
+                <p>lundi de 17h45 à 19h15</p>
+                <h4>Lieu</h4>
+                <p>Centre Sous-Bosset</p>
               </div>
             </div>
-            <div class="col-md-6">
+          </div>
+          <div class="row no-gutters">
+            <div class="col-md-6 order-6 order-md-0">
               <div class="discipline theme-dark">
                 <h2>Parents-enfants</h2>
-                <div class="row">
-                  <div class="col-6">
-                    <h4>Age</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>dès 2.5 ans</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Entraînements</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>jeudi de 16h30 à 17h30</p>
-                  </div>
-                  <div class="col-6">
-                    <h4>Lieu</h4>
-                  </div>
-                  <div class="col-6">
-                    <p>Centre Sous-Bosset</p>
-                  </div>
-                </div>
+                <h4>Age</h4>
+                <p>dès 2.5 ans</p>
+                <h4>Entraînements</h4>
+                <p>jeudi de 16h30 à 17h30</p>
+                <h4>Lieu</h4>
+                <p>Centre Sous-Bosset</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 order-0 order-md-6">
               <div class="img-cover" style="background-image:url('img/home/groups/parentsEnfants.jpg');"></div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="section theme-dark contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="tel:+41219051010">
+              <i class="fas fa-phone"></i>
+              <h5>+41 21 905 10 10</h5>
+            </a>
+          </div>
+          <div class="col-md-4 contact-middle">
+            <i class="fas fa-map-marker"></i>
+            <ul>
+              <li>FSG Granges-Marnand</li>
+              <li>Case postale 124</li>
+              <li>1523 Granges-près-Marnand</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <a href="mailto:info@fsg-granges-marnand.ch">
+              <i class="fas fa-envelope"></i>
+              <h5>info@fsg-granges-marnand.ch</h5>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
